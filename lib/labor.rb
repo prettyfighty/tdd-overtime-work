@@ -2,7 +2,6 @@ class Labor
 
   def initialize(salary)
     @salary = salary
-    @salary_per_hour = (@salary / 30 / 8.0).round
   end
 
   def work!

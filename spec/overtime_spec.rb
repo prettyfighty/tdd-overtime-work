@@ -4,7 +4,8 @@ require 'timecop'
 
 RSpec.describe Overtime do
   let(:labor) { Labor.new(48000)}
-  
+  # 設定月薪 $48,000
+
   describe '平常日的加班' do
     let(:overtime) { Overtime.new('平常日')}
 
