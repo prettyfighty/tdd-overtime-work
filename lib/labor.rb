@@ -5,7 +5,7 @@ class Labor
   end
 
   def work!
-    @work_at = Time.now
+    @work_from = Time.now
     @getoff_at = nil
   end
 
@@ -19,9 +19,9 @@ class Labor
 
   def worked_for_seconds
     if off?
-      (@getoff_at - @work_at).to_i
+      (@getoff_at - @work_from).to_i
     else
-      (Time.now - @work_at).to_i
+      (Time.now - @work_from).to_i
     end
   end
 
